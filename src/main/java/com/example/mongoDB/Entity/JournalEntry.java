@@ -2,6 +2,7 @@ package com.example.mongoDB.Entity;
 
 import java.time.LocalDateTime;
 
+import com.example.mongoDB.enums.Sentiment;
 import lombok.*;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
@@ -21,6 +22,8 @@ public class JournalEntry {
 	private String content;
 	
 	private LocalDateTime date;
+
+	private Sentiment sentiment;
 
 	
 
